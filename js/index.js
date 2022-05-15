@@ -79,12 +79,12 @@ function CheckData() {
   dbCheckProfile.where('lineID','==',sessionStorage.getItem("LineID"))
   .get().then((snapshot)=> {
     snapshot.forEach(doc=> {
-    	alert(doc.data().empID);
+    	//alert(doc.data().empID);
       CheckFoundData = doc.data().statusconfirm;
       if(doc.data().statusconfirm==1) {
 	      sessionStorage.setItem("EmpID", doc.data().empID);
 	      sessionStorage.setItem("EmpName", doc.data().empName);
-	      alert(sessionStorage.getItem("EmpID"));
+	      //alert(sessionStorage.getItem("EmpID"));
         //ShowIMG();
         //location.href = "index.html";
       } else {
