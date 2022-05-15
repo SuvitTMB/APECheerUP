@@ -80,9 +80,10 @@ function CheckData() {
   .get().then((snapshot)=> {
     snapshot.forEach(doc=> {
       CheckFoundData = doc.data().statusconfirm;
-      sessionStorage.setItem("EmpID", doc.data().empID);
-      sessionStorage.setItem("EmpName", doc.data().empName);
       if(doc.data().statusconfirm==1) {
+	      sessionStorage.setItem("EmpID", doc.data().empID);
+	      sessionStorage.setItem("EmpName", doc.data().empName);
+	      alert(sessionStorage.getItem("EmpID"));
         //ShowIMG();
         //location.href = "index.html";
       } else {
