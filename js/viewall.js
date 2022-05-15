@@ -46,8 +46,14 @@ function loadData() {
       xEmpMember = "";
       xTimegetBox = "";
       var xNewText = "";
+      var xClip = "";
+      if(doc.data().DisplayImg!="") { 
+        xClip = doc.data().DisplayImg;
+      } else {
+        xClip = "./img/clip-01.jpg";
+      }
       xNewText += '<div style="color:#0056ff;font-size:11px;"><div>'+doc.data().EmpName+' ('+doc.data().EmpID+')</div>';
-      xNewText += '<div><img src="'+doc.data().DisplayImg+'" style="max-width:200px; width:100%;margin-top:8px;"></div>';
+      xNewText += '<div><img src="'+xClip+'" style="max-width:200px; width:100%;margin-top:8px;"></div>';
       xNewText += '<div style="max-width:400px; width:100%;margin-top:8px;font-size:11px;line-height: 1.2; color:#999;">'+doc.data().SendMemo+'</div>';
       xNewText += '<div style="margin-top:4px;color:#f68b1f;">View : '+doc.data().ClickView+' | Like : '+doc.data().ClickLike+' | ข้อความ : '+doc.data().ClickMemo+' </div></div>';
       dataSet = [xNewText, "<div class='btn-t1' style='max-width:60px;' id="+i+">คลิก</div>", doc.id, i];
