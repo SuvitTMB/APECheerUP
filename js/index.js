@@ -79,6 +79,7 @@ function CheckData() {
   dbCheckProfile.where('lineID','==',sessionStorage.getItem("LineID"))
   .get().then((snapshot)=> {
     snapshot.forEach(doc=> {
+    	alert(doc.data().empID);
       CheckFoundData = doc.data().statusconfirm;
       if(doc.data().statusconfirm==1) {
 	      sessionStorage.setItem("EmpID", doc.data().empID);
