@@ -23,10 +23,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href='css/w3.css' rel="stylesheet" type="text/css">
-  <script src="https://static.line-scdn.net/liff/edge/versions/2.12.0/sdk.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.12.0/sdk.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+
+
+
   <style type="text/css">
     @media (min-width: 768px) { margin-left:0px; }
     .form-control { 
@@ -70,34 +74,15 @@
     </div>
   </nav>
 
+
+
   <main id="main">
-    <div class="row" style="margin-top:50px;">
-      <div class="container">
+    <div class="row" style="margin-top:50px; width: 100%">
       <center>
-        <div><a href="photo.html"><img src="./img/APELDP.jpg" style="width:100%; max-width: 500px"></a></div>
+        <div><a href="photo.html"><img src="./img/APELDP.jpg" style="width:100%;"></a></div>
         <div class="btn-t1">ร่วมส่งคลิปประกวด</div>
       </center>
     </div>
-    </div>
-
-<!--
-    <section style="background-color: #72d2e0;margin-top:1px;min-height: 115px;padding-bottom: 20px;">
-      <div class="container">
-        <div class="section-title">
-          <center>
-            <div class="h3div" style="color:#000;margin:30px auto 20px auto;">Songkran Family Happy Together
-              <div style="font-weight: 400; color:#000; font-size: 11px;">ภาพประกวดล่าสุดที่เพื่อน ๆ เราส่งเข้ามาร่วมประกวด</div>
-            </div>
-            <div style="color:#002d63; font-weight: 600;">คลิกเพื่อร่วมส่งกำลังใจให้ผู้เข้าประกวด</div>
-            <div id="DisplayImg"></div>
-            <div class="clr"></div>
-            <div class="btn-t3" onclick="GotoViewAll()">ดูข้อมูลผู้เข้าประกวดทั้งหมด</div>
-          </center>
-        </div>
-      </div>
-    </section>
-    <div class="clr"></div>
--->
 
     <section style="background-color: #fff;margin-top:1px;min-height: 115px;padding-bottom: 20px;">
       <div class="container">
@@ -121,12 +106,12 @@
               <ul>
                 <li>รวมเพื่อนๆในสาขา มาถ่ายคลิปวิดีโอสั้นๆ บูมเชียร์เป้า APE ของ RH ตัวเอง พร้อมท่าทางประกอบ ความยาวไม่เกิน 1 นาที เช่น “ RH 1 APE xxx ล้าน ต้องสู้! ต้องสู้! ต้องสู้! ”</li>
                 <li>ส่งคลิปมาที่ LINE ID : bioscope พร้อมระบุสาขาสำนักงานเขต / สำนักงานภาค</li>
-                <li>ระยะเวลาการส่งคลิป ระหว่างวันที่ 16 พ.ค. 65 - 19 มิ.ย. 65 และประกาศรายชื่อผู้ได้รับรางวัล วันที่ 27 มิ.ย. 65</li>
+                <li>ระยะเวลาการส่งคลิป ระหว่างวันที่ 17 พ.ค. 65 - 12 มิ.ย. 65 และประกาศรายชื่อผู้ได้รับรางวัล วันที่ 20 มิ.ย. 65</li>
                 <li>คลิปของสาขาไหนโดนใจกรรมการ ได้รับรางวัล
-                  <ul>
-                    <li><b>Pizza Voucher</b> RH ละ 3 สาขา สาขาละ 1,000 บาท</li>
-                    <li><b>KFC Voucher</b> RH ละ 7 สาขา สาขาละ 1,000 บาท</li>
-                    <li><b>Lotus’s Voucher</b> RH ละ 10 สาขา สาขา 1,000 บาท</li>
+                  <ul style="color:#f68b1f;">
+                    <li><b>RH 1 และ RH 2</b> รับ After You Voucher RH ละ 10 รางวัล รางวัลละ 1,000 บาท</li>
+                    <li><b>RH 3 และ RH 4</b> รับ Pizza Voucher RH ละ 10 รางวัล รางวัลละ 1,000 บาท</li>
+                    <li><b>RH 5 และ RH 6</b> รับ KFC Voucher RH ละ 10 รางวัล รางวัลละ 1,000 บาท</li>
                   </ul>
                 </li>
                 <li>ของรางวัลไม่สามารถแลกหรือเปลี่ยนเป็นเงินสดได้</li>
@@ -137,17 +122,6 @@
             </div>
             <div class="clr"></div>
 
-
-
-
-<!--
-            <div style="text-align: left;margin-top:20px;width:100%;max-width: 500px;">
-              <div style="width:40%; float: left;text-align: center;"><img src="./img/1H1d.gif" style="width:90%; max-width: 150px;"></div>
-              <div style="width:60%; float: left;font-size: 11px; color:#0056ff;line-height: 1.3;"><b><u>กติกาการประกวด</u></b><br>กติกาง่ายๆ เพียงส่งภาพถ่ายกิจกรรมกับครอบครัวในช่วงเทศกาลสงกรานต์ ไม่ว่าการกิน การเที่ยว หรือเปรี้ยวสุดสวิง คนละ 1 ภาพ มาที่ LINE : Retail Society ระหว่างวันที่ 8-17 เมษายน 2565<br><br><b><u>การตัดสิน</u></b><br>ภาพที่โดนใจคณะกรรมการ รับรางวัลกันไปอิ่มแบบจุกๆ !! กันแบบไม่มีกั๊ก<br><br><b><u>ประกาศผล</u></b><br>วันศุกร์ที่ 22 เมษายน 2565<br><br><b><u>รางวัล</u></b><br><b>Pizza Voucher</b> มูลค่า 1,000 บาท จำนวน 10 รางวัล<br><b>Pizza Voucher</b> มูลค่า 500 บาท จำนวน 20 รางวัล<br><br><b><u>เงื่อนไข</u></b><br>สามารถเปลี่ยนแปลงเงื่อนไขได้ตามความเหมาะสม<br>การตัดสินของคณะกรรมการถือเป็นที่สิ้นสุด</div>
-            </div>
-            <div class="clr" style="height: 25px;"></div>
-            <div class="btn-t3" onclick="GotoView()">ร่วมส่งกำลังใจให้เพื่อนๆ</div>
--->
           </center>
         </div>
       </div>
@@ -155,24 +129,23 @@
     <div class="clr"></div>
   </main>
 
-
-<div id="id01" class="w3-modal w3-animate-opacity">
-  <div class="w3-modal-content w3-card-4">
-    <div class="w3-container" style="min-height:300px;padding:5px;width:100%;text-align:center">
-        <div id="DisplayClipVDO"></div>
-        <div class="btn-t2" onclick="CloseAll()" style="margin:10px auto 20px auto;">ปิดหน้าต่างนี้</div>
-     </center>
+  <div id="id01" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4">
+      <div class="w3-container" style="min-height:300px;padding:5px;width:100%;text-align:center">
+          <div id="DisplayClipVDO"></div>
+          <div class="btn-t2" onclick="CloseAll()" style="margin:10px auto 20px auto;">ปิดหน้าต่างนี้</div>
+       </center>
+      </div>
     </div>
+    <div class="clr" style="height: 50px;"></div>
   </div>
-  <div class="clr" style="height: 50px;"></div>
-</div>
 
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a>
-  <div style="font-size:12px;font-weight: 600;margin-bottom: 50px;">@<font color="green">LINE</font> <font color="#002d63">Retail</font> <font color="#0056ff">So</font><font color="#f68b1f">ciety</font></div>
-  <div id="isLoggedIn" style="color:#ffffff;"></div>
-</footer>
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <div style="font-size:12px;font-weight: 600;margin-bottom: 50px;">@<font color="green">LINE</font> <font color="#002d63">Retail</font> <font color="#0056ff">So</font><font color="#f68b1f">ciety</font></div>
+    <div id="isLoggedIn" style="color:#ffffff;"></div>
+  </footer>
 
 <script src="./js/index.js"></script>
 
